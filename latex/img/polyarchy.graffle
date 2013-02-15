@@ -1612,7 +1612,7 @@
 			</dict>
 		</array>
 		<key>Frame</key>
-		<string>{{-128, 95}, {1341, 921}}</string>
+		<string>{{2, 96}, {1341, 921}}</string>
 		<key>ListView</key>
 		<true/>
 		<key>OutlineWidth</key>

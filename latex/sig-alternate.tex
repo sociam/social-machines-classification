@@ -226,6 +226,18 @@ For each of these motivations, different roles that participate may have differe
 \item To a contributor's social network
 \end{enumerate}
 
+In addition to relationships to Maslow's hierarchy of needs, which drive the motivations,
+we suggest that there are also resulting actions from each motivation. Thus, it should be
+possible to follow basic human needs to motivations in social machines, through to the
+actual actions (and therefore the necessary software feature support) that are made by
+participants in social machines. Our theory is that this path may enable designers of
+social machines to satisfy human needs by implemented specific features into their social
+machines, or to identify potential gaps in their serving of needs and motivations due
+to lack of implemented features.
+
+
+
+
 \subsection{Artefacts of Social Machines}
 
 Our next observation was that there are a number of shared artefact types that can be classified within the context of social machines. Specifically that
@@ -238,46 +250,50 @@ to demonstrate that these concepts can be used to compare and contrast different
 
 \subsection{Metrics of participants and usage}
 
-Finally, we identified several contracts that are relevant for all social machines. First, there are construct that relate to ``analytics'' that can be measured at a point in time, and may change over time. Specifically:
+Finally, we identified several constructs that are relevant for all social machines. First, there are construct that relate to ``analytics'' that can be measured at a point in time, and may change over time. We have documented these constructs in Table \ref{table:constructs}. In the left column we list construct regarding the design affordances of the social machine. In the middle column we have a mixture of the result of how the design affordances actually were realised by the social computation, such as how users co-opted / incorporated / interpreted the constraints. Finally, in the right column we list analytical measures of social machines which are subject to change over time.
+
+
+\begin{table*}[htbp]
+\begin{center}
+\begin{tabular}{|p{6.5cm}|p{5.5cm}|p{4.5cm}|}
+\hline
+Designed Affordances & Participatory Affordances & Analytics \\
+\hline
+Does it afford anonymity & worked within them & Size \\
+Does it afford quality control or moderation, and in what ways & worked around them & Maturity \\
+What types of contribution does it afford & gamed them & Competitors \\
+Openness of resulting data set & extended and enhanced them & Diversity of user base \\
+ & derived new structures and conventions (e.g., hashtags) & Population over time \\
+ &  & Frequency of participation \\
+\hline
+\end{tabular}
+\end{center}
+\caption{Constructs of social machines, listing affordances that are designed into machines, affordances that have resulted from use, and analytical constructs that can be measured and change over time.} \label{table:constructs}
+\end{table*}%
+
+The result is what we call `participation' constructs. These constructs arise from use of a
+social machine, and are not necessarily predictable; they include:
 
 \begin{enumerate}
-\item Size
-\item Maturity
-\item Competitors
-\item Diversity of user base
-\item Popularity over time
-\item Frequency of participation
-\end{enumerate}
-
-Next, there are constructs regarding the design affordances of the social machine:
-
-\begin{enumerate}
-\item Does it afford anonymity
-\item Does it afford quality control or moderation, and in what ways
-\item What types of contribution does it afford
-\item Openness of resulting data set
-\end{enumerate}
-
-In the middle we have a mixture of the result of how the design affordances actually were realised by the social computation, such as how users co-opted / incorporated / interpreted the constraints and: 
-
-\begin{enumerate}
-\item worked within them
-\item worked around them
-\item gamed them
-\item extended and enhanced them
-\item derived new structures and conventions (e.g., hashtags)
-\end{enumerate}
-
-The result is what we call `participation' constructs including:
-
-\begin{enumerate}
-\item Roles emerging in the social machine  (domain expert, troll/spammer, hub, personal gainer)
+\item Roles emerging in the social machine.
+   \indent In addition to designed and implemented roles such as {\it moderator} and {\it administrator}, emerging roles include motivations of the participant, such as {\it trolls}, {\it spammers}, {\it domain experts}, {\it social nexus}, and {\it re-blogger}.
 \item Quality of contributions
+    \indent For any social machine, the quality of contributions will vary. While some
+    issues with quality can be predicted and protected against (e.g., through 
+    multi-user result agreement on Mechanical Turk~\cite{ipeirotis2010quality}), some
+    particular issues with quality cannot always be predicted ahead of time.
 \item Content of contributions
+    \indent While a system operator may design their social machine to generate specific
+    types of content, participants may subvert the system in order to generate other types,
+    or to concentrate on areas that were unforeseen at the time of launch, but are now seen
+    as useful to the operators.
 \item Global / cultural reach
-\item Task reach --- what do people use it for? 	
+    \indent 
+\item Task reach --- what do people use it for?
 \item Active/Passive participation roles 
 \end{enumerate}
+
+
 
 
 
