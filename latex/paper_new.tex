@@ -141,7 +141,7 @@ This paper provides a framework for...
 
 \section{Social machines: an introduction}
 Once upon a time 'machines' were programmed by programmers and used by users. The Web, and the
-massive participation in it, has changed this relationship: we now see configurations of people interacting with content exposed via the Web and with each other, typified by social Web sites. Rather than drawing a line through such Web-based systems to separate the human and machine parts (as Computer Science has traditionally done), we can now draw a line around them  and  treat  each  such  assembly  as  a  'social  machine'  ñ  a  machine  comprising  digital  and  human
+massive participation in it, has changed this relationship: we now see configurations of people interacting with content exposed via the Web and with each other, typified by social Web sites. Rather than drawing a line through such Web-based systems to separate the human and machine parts (as Computer Science has traditionally done), we can now draw a line around them  and  treat  each  such  assembly  as  a  'social  machine'  ¬ñ  a  machine  comprising  digital  and  human
 components and the interactions between them. This crucial transition in thinking acknowledges the reality of today's computing systems and is essential to underpin any understanding of the science and engineering of our future socio-technical systems: we view an ecosystem of co-evolving social machines.
 
 The  typical  social Web  site  is  a  social machine, with  its user-generated  content  and  social network evolving dynamically  and  hand-in-hand. More  than  just  'data' or  'content',  these sites have  some notion of  'social artefacts' around which we forge the links in the social network, like photos on flickr or movies on YouTube, and they  can also be  flourishing  spaces  for human  ingenuity.  
@@ -176,12 +176,12 @@ People  supply  or  refine  data.    Systems  in  this  category  use  people  a
 Examples of  this  sort of  system  are Galaxy  Zoo  [www.galaxyzoo.org] where people  classify  galaxies with
 collective performance as good as professional astronomers and reCaptcha [www.google.com/recaptcha]
 where people refine data describing digital manuscripts.
-Åú People are elementary problem solvers. Systems in this category typically find innovative ways of getting
+¬Å¬ú People are elementary problem solvers. Systems in this category typically find innovative ways of getting
 people to perform a task that are easy for them but for which no effective computer algorithm is available.
 Examples  of  this  sort  of  system  are Mechanical  Turk  [www.mturk.com]  and  the  related  Turkit  system
 [groups.csail.mit.edu/uid/turkit]  that  allows  these  actions  to  be  strung  together  iteratively,  thus  giving  a
 basic form of composition.
-Åú People generate/test partial  solutions. Systems  in  this  category provide  incentives  for people  to perform
+¬Å¬ú People generate/test partial  solutions. Systems  in  this  category provide  incentives  for people  to perform
 complex  problem  solving  that  generates  a  design  to  be  tested  automatically  and/or  tests  automatically
 generated  designs.    Examples  include  EteRNA  [eterna.cmu.edu]  in which  participants  design RNA  that  is
 evaluated automatically using simulators and then refined via human effort; Matlab programming contests
@@ -193,7 +193,7 @@ evaluated automatically using simulators and then refined via human effort; Matl
 A Social Machine includes human and machine two major components, therefore, the study of social machine is an interdisciplinary endeavour. Since the Turning machine was invented, there has been a `paradigm shift' in using computers, where the computer facilitates human communication rather acts as a purely calculative device. The Computer-supported Collaboration Work (CSCW) emerged in 1982 represent such shift. It addresses ``how collaborative activities and their coordination can be supported by means of computer systems'' later evolved in a more broader sense of  Computer-supported collaboration (CSC). The Social computing is another shift, which is a generic term refers systems that support ``the gathering, representation, processing, use, and dissemination of information that is distributed across social collectivities such as teams, communities, organizations, and markets''. To compare with the CSC, the social computing has more focus in computing rather than broader sense of 
 
 
-CSCW (1982)	"how collaborative activities and their coordination can be supported by means of computer systems."Social Computing (1994)	the system that support the gathering, representation, processing, use, and dissemination of information that is distributed across social collectivities such as teams, communities, organizations, and markets. 		Open Innovation (2003)	Paradigm in how companies commercialize trial knowledge.  Is a paradigm that assumes that firms can and should use external ideas as well as internal ideas, and internal and external path to market, as the firms look to advance their technology. It combines internal and external ideas into architectures and systems whose requirements are defined by a business model. The Wisdom of Crowds (2004)	About the aggregation of information in groups, resulting in decisions that, he argues, are often better than could have been made by any single member of the group. Human Computation (2005)	.	“...a paradigm for utilizing human processing power to solve problems that computers cannot yet solve.” Crowdsourcing (2006)	“Crowdsourcing is the act of taking a job traditionallyperformed by a designated agent (usually an employee) and outsourcing it to an undefined, generally large group of people in the form of an open call.”.	Collective Intelligence (2009)	"... groups of individuals doing things collectively that seem intelligent.”
+CSCW (1982)	"how collaborative activities and their coordination can be supported by means of computer systems."Social Computing (1994)	the system that support the gathering, representation, processing, use, and dissemination of information that is distributed across social collectivities such as teams, communities, organizations, and markets. 		Open Innovation (2003)	Paradigm in how companies commercialize trial knowledge.  Is a paradigm that assumes that firms can and should use external ideas as well as internal ideas, and internal and external path to market, as the firms look to advance their technology. It combines internal and external ideas into architectures and systems whose requirements are defined by a business model. The Wisdom of Crowds (2004)	About the aggregation of information in groups, resulting in decisions that, he argues, are often better than could have been made by any single member of the group. Human Computation (2005)	.	√í...a paradigm for utilizing human processing power to solve problems that computers cannot yet solve.√ì Crowdsourcing (2006)	√íCrowdsourcing is the act of taking a job traditionallyperformed by a designated agent (usually an employee) and outsourcing it to an undefined, generally large group of people in the form of an open call.√ì.	Collective Intelligence (2009)	"... groups of individuals doing things collectively that seem intelligent.√ì
 
 The Wisdom of Crowds described by Surowiecki, It is idea of the aggregation of information in groups, resulting in decisions that are often better than could have been made by any single member of the group. 
 
@@ -216,19 +216,31 @@ CSCW, social computing
 \section{Classification of social machines}
 
 \subsection{Methodology}
+
 In order to identify and classify social machines, we first embarked on a principled
 knowledge elicitation process~\cite{knowledgeelicitation}, to determine the {\it elements}
 (i.e., the social machines) and the {\it constructs} (i.e., the classifying factors) that
 we can use to classify social machines. We used the {\it repertory grid} elicitation
-technique~\cite{kelly} in order to derive an initial set of elements and constructs. We
-asked ten Computer Science researchers familiar with social machines to create their own
-repertory grids, and populate the elements from their own knowledge, and to create the
-constructs using the standard repertory grid elicitation technique. This exercise led
+technique~\cite{kelly} in order to derive an initial set of elements and constructs.
+
+To elicit knowledge using a repertory grid, software is used to ask users to describe constructs
+that differentiate between elements. For example, prompting the user to create a construct that
+differentiates between {\it GalaxyZoo} and {\it Wikipedia}. The user describes the opposing poles of 
+the construct, in this case, the user may decide on ``For Science'' and ``For Socialising''. The
+user then rates every element from 1 to 5 on this construct, where 1 represents an element that is
+``For Science'', and 5 if the element is ``For Socialising''; elements can also be rated between
+the poles if they may correspond to both or neither. The repertory grid software identifies
+elements that are the least differentiated when requesting new constructs, in an attempt to
+elicit as much knowledge as possible from the user. Ten Computer Science researchers familiar with social machines created their own
+repertory grids, and populate the elements from their own knowledge, and created the
+constructs using the standard repertory grid elicitation technique described above. This exercise led
 to 10 grids, the union of which comprised a total of 56 unique elements (social machines)
 and 117 different constructs.
 
-To make the set of social machines easier to refer to and more approachable, we performed
-an initial grid analysis of the machines, clustering them into related user-centered
+In addition to repertory grid analysis, we also employed a classification analysis of social
+machines, by extracting the most-tagged terms of each social network from the online
+bookmarking service {\it Delicious.com}, and thus achieving a crowd sourced cluster of
+classifications. This resulting in user-centered cluster 
 themes, of: Social Networks, (Micro)Blogging, News Aggregators, Image Boards, Crowd Science,
 Answer Gardens, Community Watch, Health and Wellbeing Support, Action and Investigation,
 Opinion Sharing, Video Sharing, Photo Sharing, Code Sharing, Art Sharing, Crowdsourcing
