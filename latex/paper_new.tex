@@ -140,64 +140,45 @@ This paper provides a framework for...
 %\keywords{ACM proceedings, \LaTeX, text tagging}
 
 \section{Social machines: an introduction}
-Once upon a time 'machines' were programmed by programmers and used by users. The Web, and the
-massive participation in it, has changed this relationship: we now see configurations of people interacting with content exposed via the Web and with each other, typified by social Web sites. Rather than drawing a line through such Web-based systems to separate the human and machine parts (as Computer Science has traditionally done), we can now draw a line around them  and  treat  each  such  assembly  as  a  'social  machine'    a  machine  comprising  digital  and  human
-components and the interactions between them. This crucial transition in thinking acknowledges the reality of today's computing systems and is essential to underpin any understanding of the science and engineering of our future socio-technical systems: we view an ecosystem of co-evolving social machines.
+Once upon a time 'machines' were programmed by programmers and used by users. The success of the Web has changed this relationship: we now see configurations of people interacting with content and with each other, typified by social Web sites. Rather than drawing a line through such Web-based systems to separate the human and machine parts (as Computer Science has traditionally done), we can now draw a line around them  and  treat  each  such  assembly  as  a  'social  machine'  -  a  machine  in which  digital  and  human components are seamlessly interwoven. This crucial transition in thinking acknowledges the reality of current socio-technical systems, and is essential to underpin any understanding of the science and engineering of their future development towards pervasive ecosystems of co-evolving social machines.
 
-The  typical  social Web  site  is  a  social machine, with  its user-generated  content  and  social network evolving dynamically  and  hand-in-hand. More  than  just  'data' or  'content',  these sites have  some notion of  'social artefacts' around which we forge the links in the social network, like photos on flickr or movies on YouTube, and they  can also be  flourishing  spaces  for human  ingenuity.  
-Today we  see  a  divide  between  conventional  computer  systems  dedicated  to  data-  and  computation-intensive tasks, and social computing like the Web 2.0 sites. But many of our challenges, from healthcare to transport, need  both  of  these  axes:  a  sophisticated  combination  of  data-intensive  automation  and  deep  social involvement. This suggests the need for new social machines to tackle new problems, and to achieve this we
-need to understand the science and engineering of social machines. 
+A number of prominent examples aside, today we still see a divide between conventional IT systems dedicated to data- and computation-intensive tasks, and Web $2.0$ sites offering some combination of well-known participatory features, in which user-generated content and the underlying social network evolve dynamically and hand-in-hand. As technology becomes more and more ubiquitous, many of the challenges we will witness in any domain of our life, business, and society will need solutions that rely on both of these axes: a sophisticated  combination  of  data-intensive, complex automation and deep community involvement. This suggests the need for new types of systems to tackle these challenges, and to achieve requires a through understanding of the science and engineering of social machines.
 
-A  traditional  database,  with  users  looking  up  records  independently  of  each  other  and  an  administrator responsible for content, has some of the right ingredients but there is really no social component in this strict provider-consumer relationship. When we fill out a form (e.g. health information, birds spotted in my garden) it  is minimally  a  social machine  because humans  are  part  of  the  'social  computation'.  This  becomes  richer when  the database  is  curated by members  of  the  community  (e.g. Wikipedia) and when  the  social network adds value implicitly (amazon) or explicitly (Facebook). We anticipate many categories of social machine in this continuum, and they may manifest themselves as Web site or app, or indeed in the Internet of Things.
+As a first step, we propose a classification framework for social machines, which can be used to describe, study, and compare this expanding field of interdisciplinary research and the increasing number of systems combining human and computational intelligence to serve purposes as diverse as traffic management, healthcare, media and journalism, or design and natural sciences.
 
-An emerging, interdisciplinary field of research and development with a growing number of social machine instances and studies about them.
+In this paper we introduce the current version of the framework, which is the result of a knowledge elicitation process performed internally in our lab. Our aim is to present it to the broader community and extend and revise it based on their feedback in order to achieve a shared understanding, terminology, and set of descriptive features to enable a systematic study of existing and future social machines. Using a common descriptive classification allows researchers to observe the effects of specific technical properties of a system on social behavior, identify design and evolution patterns, learn about social network formation and dynamics, and devise incentive mechanisms to encourage large-scale participation. A second audience group targeted by our work are developers of social machines. For them, the framework may provide a theoretical grounding for the realization of new systems, informing system design and operation in terms of critical features and predicted user behavior and community development.
 
-We propose a classification framework for social machines. 
+\section{What are social machines?}
+Social machines can be basically characterized as assemblies of human and automatic components and their interaction. A  traditional  database,  with  users  looking  up  records  independently  of  each  other  and  an  administrator responsible for content, has some of the right ingredients but there is really no social component in this strict provider-consumer relationship. When we fill out a form (e.g., health information, birds spotted in my garden) it  is minimally  a  social machine  because humans  are  part  of  the  'social  computation'.  This  becomes  richer when  the database  is  curated by members  of  the  community  (e.g., Wikipedia) and when  the  social network adds value implicitly (Amazon) or explicitly (Facebook). We anticipate many categories of social machine in this continuum, and they may manifest themselves as Web site or app, or indeed in the Internet of Things.
 
-Targeted audiences
+To describe social machines we roughly rely on four different categories of classification features:
 
-* research community: shared terminology, set of key features and their possible instantiations based on the analysis of a relevant set of 50 (?) social machines (both popular systems as well as long tail systems); facilitates the study of design and evolution patterns; supports research on how communities emerge and develop and organisational studies (mechanism design, incentives); different research approaches can be better compared and aligned.
+\begin{description}
+  \item [The types of tasks undertaken by the social component and the resulting contributions]: social machines, just as any computing system, are built with a given purpose in mind, and exhibit functionality by which this purpose can be achieved. Users and the emerging social network interact with the system and with each other to carry out specific tasks by which they contribute to the 'computation'. This includes the creation and refinement of digital artifacts by executing given actions, possibly in collaboration with other participants. For example, in GalaxyZoo\footnote{\url{http://www.galaxyzoo.org}} people classify galaxies with collective performance as good as professional astronomers, while in reCaptcha\footnote{\url{http://www.google.com/recaptcha}} they refine the data that describes digital manuscripts. Sometimes, systems look for innovative ways of getting people to engage with the systems, including game narratives, like in EteRNA\footnote{\url{http://eterna.cmu.edu}}, in which  participants design RNA  that is evaluated automatically using simulators and then refined via human effort, or monetary rewards, like in Amazon's Mechanical Turk, a platform in which users undertake routine (micro) tasks such as object classification, audio transcription and text translation.
 
-* developer community: provides a theoretical grounding for the realisation of new systems, informs system design and operation (what features should be implemented, what features are more important than others); enables predictions on user behaviour and community development.
+  \item [The roles of the participants and the social network they form]:
 
-The framework is based on interviews with XXX researchers covering XXX systems and was preliminary evaluated with respect to ...
+  \item [The motivating factors and incentive mechanisms]: system features influencing user behavior and the social network dynamics
 
-Dimensions of the classification
-
-* tasks and types of contributions: what does the system do, how do participants contribute: from supplying data and creating content to solving problems or validating solutions.
-
-* social network and interaction: roles, hierarchies of roles, profiling
-
-* motivation and incentives: system features influencing user behavior and the social network dynamics
-
-* human-machine interaction: how are human contributions used to compute things, including quality control, spam, workflow, aggregation of results
-
-People  supply  or  refine  data.    Systems  in  this  category  use  people  as,  effectively,  sophisticated  sensors.
-Examples of  this  sort of  system  are Galaxy  Zoo  [www.galaxyzoo.org] where people  classify  galaxies with
-collective performance as good as professional astronomers and reCaptcha [www.google.com/recaptcha]
-where people refine data describing digital manuscripts.
- People are elementary problem solvers. Systems in this category typically find innovative ways of getting
-people to perform a task that are easy for them but for which no effective computer algorithm is available.
-Examples  of  this  sort  of  system  are Mechanical  Turk  [www.mturk.com]  and  the  related  Turkit  system
-[groups.csail.mit.edu/uid/turkit]  that  allows  these  actions  to  be  strung  together  iteratively,  thus  giving  a
-basic form of composition.
- People generate/test partial  solutions. Systems  in  this  category provide  incentives  for people  to perform
-complex  problem  solving  that  generates  a  design  to  be  tested  automatically  and/or  tests  automatically
-generated  designs.    Examples  include  EteRNA  [eterna.cmu.edu]  in which  participants  design RNA  that  is
-evaluated automatically using simulators and then refined via human effort; Matlab programming contests
-[www.mathworks.co.uk/matlabcentral/contest] where people compete for the best solution as judged by automated  tests  that  compute  the  efficiency  of  the  code;  or  Scratch  [scratch.mit.edu]  in  which  simple programs are created by some participants and modified by others in a remixing process.
+  \item [Interaction between social and machine component]: how are human contributions used to compute things, including quality control, spam, workflow, aggregation of results
+\end{description}
 
 
 \section{Comparison with related fields}
 
-A Social Machine includes human and machine two major components, therefore the study of social machine is an interdisciplinary endeavour. Since the Turning machine was invented, there has been a `paradigm shift' \cite{kuhn1996structure} in using computers, where the computer facilitates human communication rather acts as a purely calculative device. The Computer-supported Collaboration Work (CSCW) \cite{grudin1994computer} emerged in 1984 represents such shift. It addresses ``how collaborative activities and their coordination can be supported by means of computer systems''. This concept later evolved into a broader sense of  Computer-supported collaboration (CSC). The Social computing \cite{parameswaran2007research} is another shift, which refers systems that support ``the gathering, representation, processing, use, and dissemination of information that is distributed across social collectivities such as teams, communities, organizations, and markets''. To compare with the CSC, the social computing has more focus in `computing' rather than `collaboration'. Similarly, the Human Computation \cite{von2009human} is another paradigm towards the computational direction, which utilize human processing power to solve problems that computers cannot yet solve. All these three mentioned fields overlap in their concepts and are mainly popularised in the computer science. In the Web 2.0 era, there were few generic concepts/buzzword emerged on the idea of utilising the human power which are not only used in computer science, but also in other fields such as social science, business etc. Crowding sourcing \cite{howe2006crowdsourcing} as an example, describes the idea that taking a job traditionally performed by a designated agent and outsourcing it to an undefined, generally large group of people in the form of an open call. Open Innovation \cite{chesbrough2008open} advocates the similar idea with empathizing on the innovation in firms. Surowiecki also argued in the book of the wisdom of crowds \cite{surowiecki2005wisdom} that the aggregation of information in groups, resulting in decisions that are often better than could have been made by any single member of group. Collective Intelligence described by Malone \cite{malone2009harnessing}, defines an even more broadly concept that ``groups of individuals doing things collectively that seem intelligent.'' 
-The concept overlapping between human computation, crowdsourcing, social computing and collective intelligence is discussed in \cite{quinn2011human}. 
-In  social machines  the  social and  the  technical are equal  partners. While  crowdsourcing  could  be  viewed  as  'human  subroutines'  and  'citizen  sensors',  the social machine perspective is one of incentivised participation and not humans enslaved to computers. We define the scope of social machine in a venn digram in Figure \ref{socialmachine}. 
+<<<<<<< HEAD
+A Social Machine includes human and machine two major components, therefore the study of social machine is an interdisciplinary endeavour. Since the Turning machine was invented, there has been a `paradigm shift' \cite{kuhn1996structure} in using computers, where the computer facilitates human communication rather acts as a purely calculative device. The Computer-supported Collaboration Work (CSCW) \cite{grudin1994computer} emerged in 1984 represents such shift. It addresses ``how collaborative activities and their coordination can be supported by means of computer systems''. This concept later evolved into a broader sense of  Computer-supported collaboration (CSC). The Social computing \cite{parameswaran2007research} is another shift, which refers systems that support ``the gathering, representation, processing, use, and dissemination of information that is distributed across social collectivities such as teams, communities, organizations, and markets''. To compare with the CSC, the social computing has more focus in `computing' rather than `collaboration'. Similarly, the Human Computation \cite{von2009human} is another paradigm towards the computational direction, which utilize human processing power to solve problems that computers cannot yet solve. All these three mentioned fields overlap in their concepts and are mainly popularised in the computer science. In the Web 2.0 era, there were few generic concepts/buzzword emerged on the idea of utilising the human power which are not only used in computer science, but also in other fields such as social science, business etc. Crowding sourcing \cite{howe2006crowdsourcing} as an example, describes the idea that taking a job traditionally performed by a designated agent and outsourcing it to an undefined, generally large group of people in the form of an open call. Open Innovation \cite{chesbrough2008open} advocates the similar idea with empathizing on the innovation in firms. Surowiecki also argued in the book of the wisdom of crowds \cite{surowiecki2005wisdom} that the aggregation of information in groups, resulting in decisions that are often better than could have been made by any single member of group. Collective Intelligence described by Malone \cite{malone2009harnessing}, defines an even more broadly concept that ``groups of individuals doing things collectively that seem intelligent.''
+The concept overlapping between human computation, crowdsourcing, social computing and collective intelligence is discussed in \cite{quinn2011human}.
+In  social machines  the  social and  the  technical are equal  partners. While  crowdsourcing  could  be  viewed  as  'human  subroutines'  and  'citizen  sensors',  the social machine perspective is one of incentivised participation and not humans enslaved to computers. We define the scope of social machine in a venn digram in Figure \ref{socialmachine}.
+=======
+The study of social machines is naturally an interdisciplinary endeavor. Since the Turning machine was invented, we have experienced a paradigm shift in computer science from computers as purely calculative devices into a worldwide interconnected computer infrastructure which facilitates almost any type of human endeavor. The Computer-supported Collaboration Work (CSCW) \cite{grudin1994computer} emerged in 1984 represents such shift. It addresses ``how collaborative activities and their coordination can be supported by means of computer systems''. This concept later evolved into a broader sense of  Computer-supported collaboration (CSC). The Social computing \cite{parameswaran2007research} is another shift, which refers systems that support ``the gathering, representation, processing, use, and dissemination of information that is distributed across social collectivities such as teams, communities, organizations, and markets''. To compare with the CSC, the social computing has more focus in `computing' rather than `collaboration'. Similarly, the Human Computation \cite{von2009human} is another paradigm towards the computational direction, which utilize human processing power to solve problems that computers cannot yet solve. All these three mentioned fields overlap in their concepts and are mainly popularised in the computer science. In the Web 2.0 era, there were few generic concepts/buzzword emerged on the idea of utilising the human power which are not only used in computer science, but also in other fields such as social science, business etc. Crowding sourcing \cite{howe2006crowdsourcing} as an example, describes the idea that taking a job traditionally performed by a designated agent and outsourcing it to an undefined, generally large group of people in the form of an open call. Open Innovation \cite{chesbrough2008open} advocates the similar idea with empathizing on the innovation in firms. Surowiecki also argued in the book of the wisdom of crowds \cite{surowiecki2005wisdom} that the aggregation of information in groups, resulting in decisions that are often better than could have been made by any single member of group. Collective Intelligence described by Malone \cite{malone2009harnessing}, defines an even more broadly concept that ``groups of individuals doing things collectively that seem intelligent.''
+The concept overlapping between human computation, crowdsourcing, social computing and collective intelligence is discussed in \cite{quinn2011human}.
+In  social machines  the  social and  the  technical are equal  partners. While  crowdsourcing  could  be  viewed  as  'human  subroutines'  and  'citizen  sensors',  the social machine perspective is one of incentivised participation and not humans enslaved to computers. We define the scope of social machine in a conceptual digram in Figure \ref{socialmachine}.
 
 \begin{figure}[htb]
 \begin{center}
 \includegraphics[width=8cm]{img/socialmachinescope.png}
-\caption{The scope of the Social Machine} \label{social machine}
+\caption{Social machines and related areas} \label{social machine}
 \end{center}
 \end{figure}
 
@@ -205,57 +186,37 @@ In  social machines  the  social and  the  technical are equal  partners. While 
 
 \subsection{Methodology}
 
-In order to identify and classify social machines, we first embarked on a principled
-knowledge elicitation process~\cite{knowledgeelicitation}, to determine the {\it elements}
-(i.e., the social machines) and the {\it constructs} (i.e., the classifying factors) that
-we can use to classify social machines. We used the {\it repertory grid} elicitation
-technique~\cite{kelly} in order to derive an initial set of elements and constructs.
+The classification framework presented in this paper was created through knowledge elicitation ~\cite{knowledgeelicitation}. In particular we used the {\it repertory grid} elicitation
+technique~\cite{kelly} in order to derive an initial set of {\it elements}, which represent instances of social machines, and {\it constructs}, which capture their most important characteristics.
 
-To elicit knowledge using a repertory grid, software is used to ask users to describe constructs
-that differentiate between elements. For example, prompting the user to create a construct that
-differentiates between {\it GalaxyZoo} and {\it Wikipedia}. The user describes the opposing poles of 
-the construct, in this case, the user may decide on ``For Science'' and ``For Socialising''. The
-user then rates every element from 1 to 5 on this construct, where 1 represents an element that is
-``For Science'', and 5 if the element is ``For Socialising''; elements can also be rated between
-the poles if they may correspond to both or neither. The repertory grid software identifies
-elements that are the least differentiated when requesting new constructs, in an attempt to
-elicit as much knowledge as possible from the user. Ten Computer Science researchers familiar with social machines created their own
-repertory grids, and populate the elements from their own knowledge, and created the
-constructs using the standard repertory grid elicitation technique described above. This exercise led
-to 10 grids, the union of which comprised a total of 56 unique elements (social machines)
-and 117 different constructs.
+In repertory grid elicitation a software tool is used to ask users to describe constructs
+that differentiate between elements - for example,  prompting the user to create a construct that
+differentiates between {\it GalaxyZoo} and {\it Facebook}, as two prominent example of social machines our classification framework should apply to. The user describes the opposing poles of the construct - in this case, the user may decide on 'For Science' and 'For Socialising' in order to capture the core distinction between the two system. The user then rates every element with value from $1$ to $5$ on this construct, where $1$ represents an element that is purely
+'For Science', and $5$ one that mainly serves  'socialising' purposes. Elements can also be rated with values between the poles if they may correspond to both or neither. The repertory grid software then identifies elements that are the least differentiated when requesting new constructs, in an attempt to elicit as much knowledge as possible from the user. We applied this technique to create an initial set of examples of social machines and to classify them according to specific features. To do so, we asked then computer science researchers familiar with the field to create their own repertory grids, and populate the elements from their own knowledge, and created the constructs using the standard repertory grid elicitation technique described above. This exercise led to $10$ grids, the union of which comprised a total of $56$ unique elements (social machines)
+and $117$ different constructs (classifying factors). As the aim of this initial phase was to understand how people perceive the notion of social machine and their most distinctive properties, we allowed the participants to choose the social machines they are familiar with and describe them in their own terms.
 
-In addition to repertory grid analysis, we also employed a classification analysis of social
-machines, by extracting the most-tagged terms of each social network from the online
-bookmarking service {\it Delicious.com}, and thus achieving a crowd sourced cluster of
-classifications. This resulting in user-centered cluster 
-themes, of: Social Networks, (Micro)Blogging, News Aggregators, Image Boards, Crowd Science,
-Answer Gardens, Community Watch, Health and Wellbeing Support, Action and Investigation,
-Opinion Sharing, Video Sharing, Photo Sharing, Code Sharing, Art Sharing, Crowdsourcing
-Platforms, Mash-up Systems, Crowdsourcing Toolkits and Platforms.
+%To enrich the resulting list of classifying constructs we then extracted the most frequent tags used in connection to the $56$ systems mentioned by the participants from the online bookmarking service {\it delicious.com}, thus achieving a crowdsourced social-machine classification containing the following clusters: Social Networks, (Micro)Blogging, News Aggregators, Image Boards, Crowd Science, Answer Gardens, Community Watch, Health and Wellbeing Support, Action and Investigation, Opinion Sharing, Video Sharing, Photo Sharing, Code Sharing, Art Sharing, Crowdsourcing Platforms, Mash-up Systems, and Crowdsourcing Toolkits and Platforms.
 
 While determining the intersection of elements was straightforward, the consolidation of the
-constructs required a more thorough process. To consolidate the constructs we embarked on a manual process of grouping the constructs
-into rough clusters, based around the areas they cover. For example, we used construct
+constructs required a more thorough process. We embarked on a manual process of grouping the constructs into rough clusters, based around the areas they cover. For example, we used construct
 clusters including: Users, Motivation, Popularity, Technology, and Purpose. We then examined
 each construct to determine which were equivalent, and whether we could re-word or subsume
 existing constructs to cover the same aspects as a construct, with the aim to remove any
 redundancy, to cut the list of constructs down to a manageable number, but to ensure that
 all of the constructs that were elicited were somehow represented in the final set. This
 process involved four of the authors discussing the choices, and finally agreeing on a
-consolidated set of 31 constructs.
+consolidated set of $31$ constructs.
 
-Even with this reduced set of constructs, if a single person were to classify all 56
-elements, this would still require 1736 individual decisions, and hence is unfeasible to
-expect full coverage of the elements using all of these constructs, despite how representative
-they are.
-
-
-[something here about doing 2 grids each and verifying the results?]
-
-To extract greater usefulness, and the ability to use our constructs to classify social
-machines we re-evaluated the constructs and the semantics that they represent into richer
-constructs that are not constrained by the 1--5 rating of repertory grid constructs.
+%Even with this reduced set of constructs, if a single person were to classify all 56
+%elements, this would still require 1736 individual decisions, and hence is unfeasible to
+%expect full coverage of the elements using all of these constructs, despite how representative
+%they are.
+%
+%[something here about doing 2 grids each and verifying the results?]
+%
+%To extract greater usefulness, and the ability to use our constructs to classify social
+%machines we re-evaluated the constructs and the semantics that they represent into richer
+%constructs that are not constrained by the 1-5 rating of repertory grid constructs.
 
 \subsection{Classification dimensions}
 
@@ -344,9 +305,6 @@ Peer-to-peer filesharing~\cite{p2p}; Tagging~\cite{tagging}; and Virtual
 Communities~\cite{ardichvili2003motivation,Moore:2007:UMM:1235000.1235035}.
 
 [relate this work back to ours briefly.]
-
-
-
 
 
 \subsubsection{Artefacts of Social Machines}
