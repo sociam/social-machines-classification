@@ -142,7 +142,7 @@ This paper provides a framework for...
 \section{Social machines: an introduction}
 Once upon a time 'machines' were programmed by programmers and used by users. The success of the Web has changed this relationship: we now see configurations of people interacting with content and with each other, typified by social Web sites. Rather than drawing a line through such Web-based systems to separate the human and digital parts (as computer science has traditionally done), we can now draw a line around them  and  treat  each  such  compound  as  a  'social  machine'  -  a  machine in which the two aspects are seamlessly interwoven. This crucial transition in thinking acknowledges the reality of current socio-technical systems, and is essential to underpin any understanding of the science and engineering of their future development towards pervasive ecosystems of co-evolving social machines.
 
-Essentially social machines can be characterized as assemblies of manually executed and machine-driven (as in 'automatized') services and the interaction of such services. A  traditional  database,  with  users  looking  up  records  independently  of  each  other  and  an  administrator responsible for the management of the content, has some of the right ingredients, but there is really no social element in this strict provider-consumer relationship. When we fill out a form (e.g., health information, birds spotted in my garden, new construction sites on my way to work) the systems supporting this activity are minimal forms of social machines  because the users  are  part  of  the  'social  computation', in this case the data creation and collection process facilitate through the site.  This social component  becomes  richer when  the database  is  curated by members  of  the broader community (e.g., Wikipedia) and when  the social network adds value implicitly (Amazon) or explicitly (Facebook) to the overall system through their individual or joint activities.
+Essentially social machines can be characterized as assemblies of manually executed and machine-driven (as in 'automatized') services and the interaction of such services. A  traditional  database,  with  users  looking  up  records  independently  of  each  other  and  an  administrator responsible for the management of the content, has some of the right ingredients, but there is really no social element in this strict provider-consumer relationship. When we fill out a form (e.g., health information, birds spotted in my garden, new construction sites on my way to work) the systems supporting this activity are minimal forms of social machines  because the users  are  part  of  the  'social  computation', in this case the data creation and collection process facilitate through the site.  This social component  becomes  richer when  the database  is  curated by members  of  the broader community (e.g., Wikipedia) and when  the social network adds value implicitly (e.g., Amazon) or explicitly (e.g., Facebook) to the overall system through their individual or joint activities.
 
 A number of prominent examples aside, today we still see a divide between conventional IT systems dedicated to data- and computation-intensive tasks, and Web $2.0$ sites offering some combination of well-known participatory features, in which user-generated content and the underlying social network evolve dynamically and hand-in-hand. However, as technology becomes more and more ubiquitous, many of the challenges we witness in any domain of our life, business, and society will soon require solutions that rely on both of these axes: a sophisticated  combination  of  data-intensive, complex automation and deep community involvement. This suggests the need for new types of systems to tackle these emerging challenges, and these systems will not be able to be built and used in a sustainable way without a through understanding of the science and engineering of (the continuum of) social machines.
 
@@ -150,24 +150,19 @@ As an early step towards achieving this principled understanding, we propose in 
 
 The current version of our framework is the result of a knowledge elicitation process performed internally in our lab. Our goal is to present it to the broader community and extend and revise it based on their feedback in order to achieve a shared understanding of the basic notions and of the associated terminology, and to consensually lay out the structure of the design space that will enable a systematic study of existing and future social machines. We anticipate that the framework will be a useful tool for both researchers in social and computer sciences, and for developers and operators of social machines. Using a common conceptualization allows the former to become familiar with the landscape, and identify topics of research that so far have remained unexplored or under-explored. They are given a theoretical grounding to observe the effects of specific technical properties of a system configuration on social behavior, discover design and evolution patterns of such systems, learn about social network formation and dynamics, and devise incentive mechanisms to encourage wide participation. For developers and operators, the framework may inform the engineering of new systems in terms of critical features and community development.
 
-This paper makes two main contributions:
+This paper makes two main contributions: First, we introduce the notion of 'social machines' and position it in connection to similar ideas and initiatives. Second we propose a set of constructs to capture the most important features of social machines and to compare existing instances thereof.
 
-\begin{itemize}
-  \item We introduce the notion of 'social machines' and position it in connection to similar ideas and initiatives.
-  \item We propose a set of constructs to capture the most important features of social machines and to compare existing instances thereof.
-\end{itemize}
-
-The remainder of this paper is organized as follows. In order to pin down what makes up a social machine, and establish the boundaries of this emerging field of research, we need to first understand the relationship between social machines and related topics such as human computation, collective intelligence, and crowdsourcing; Section \ref{sec:comparison} gives a summary of this comparative analysis. In Section \ref{sec:framework} we then present the framework in terms of the methodology used to devise it, the main clusters of constructs used for classification, and an example of using them to compare a selection of popular social machines via grid analysis. We conclude with an outlook of our future development activities, including details about the evaluation of the framework. In addition, we plan to engage with the broader community to set up a 'social machine' bringing together researchers from various disciplines who will contribute to the 'computation' of a joint and widely agreed classification framework for the field.
+The remaining sections are organized as follows. In order to pin down what makes up a social machine, and establish the boundaries of this emerging field of research, we need to first understand the relationship between social machines and related topics such as human computation, collective intelligence, and crowdsourcing; Section \ref{sec:comparison} gives a summary of this comparative analysis. In Section \ref{sec:framework} we then present the framework in terms of the methodology used to devise it, the main clusters of constructs used for classification, and an example of using them to compare a selection of popular social machines via grid analysis. We conclude with an outlook of our future development activities, including details about the evaluation of the framework. In addition, we plan to engage with the broader community to set up a 'social machine' bringing together researchers from various disciplines who will contribute to the 'computation' of a joint and widely agreed classification framework for the field.
 
 \section{Comparison with related fields}
 \label{sec:comparison}
 Since the invention of the Turing machine we have experienced a 'paradigm shift' in the usage of computers, moving away from purely calculative devices to facilitators of a wide range of human interactions. The emergence of 'Computer-supported Collaboration Work (CSCW)' \cite{grudin1994computer} is representative for the early days of this trend. CSCW addresses 'how collaborative activities and their coordination can be supported by means of computer systems' \cite{grudin1994computer}, whereas the initial concept evolved towards the more broader field of 'Computer-supported collaboration' (CSC).
 
-The Web as a global platform for information access and sharing marked a second essential milestone; in particular, through principles and technologies promoted through Web $2.0$ and the Mobile Web. These developments led to amazing growth in terms of the amounts of content available online and mass participation. They are responsible for hundreds of millions of users all over the globe creating high-quality encyclopedias, publishing Terabytes of multimedia content, contributing to world-class software, and lively taking part in defining the agenda of many aspects of our society. This trend towards 'prosumerism' is finding more and more adopters in the public and private sector as well, as governments and enterprises not only become active in open initiatives, but encourage the participation of their customers and employees in taking decisions related to organizational management, product development, services offers, and policies. In this context, a number of terms are used to refer to the ways people interact with each other and with applications: 'wisdom of the crowds', 'collective intelligence', 'open innovation', 'crowdsourcing', 'human computation', and 'social computing'. They are related, but not synonymous with 'social machines', as explained in the following (see also Figure \ref{socialmachine}).
+The Web as a global platform for information access and sharing marked a second essential milestone; in particular, through principles and technologies promoted through Web $2.0$ and the Mobile Web. These developments led to amazing growth in terms of the amounts of content available online and mass participation. They are responsible for hundreds of millions of users all over the globe creating high-quality encyclopedias, publishing Terabytes of multimedia content, contributing to world-class software, and lively taking part in defining the agenda of many aspects of our society. This trend towards 'prosumerism' is finding more and more adopters in the public and private sector as well, as governments and enterprises not only become active in open initiatives, but encourage the participation of their customers and employees in taking decisions related to organizational management, product development, services offers, and policies. In this context, a number of terms are used to refer to the ways people interact with each other and with applications: 'wisdom of the crowds', 'collective intelligence', 'open innovation', 'crowdsourcing', 'human computation', and 'social computing'. They are related, but not synonymous with 'social machines', as explained in the following (see also Figure \ref{fig:socialmachine}).
 
 \begin{figure}[htb]
 \begin{center}
-\includegraphics[width=0.3\textwidth]{img/socialmachinescope.png}
+\includegraphics[width=0.25\textwidth]{img/socialmachinescope.png}
 \caption{Social machines and related areas} \label{fig:social machine}
 \end{center}
 \end{figure}
@@ -187,10 +182,9 @@ We now turn to a description of the main classification dimensions and features 
 \label{sec:methodology}
 The classification framework presented in this paper was created through knowledge elicitation ~\cite{knowledgeelicitation}. In particular we used the {\it repertory grid} elicitation
 technique~\cite{kelly} in order to derive an initial set of {\it elements}, which represent instances of social machines, and {\it constructs}, which capture their most important characteristics.
-
 In repertory grid elicitation a software tool is used to ask users to describe constructs
 that differentiate between elements - for example,  prompting the user to create a construct that
-differentiates between {\it GalaxyZoo}\footnote{In GalaxyZoo people classify galaxies with collective performance as good as professional astronomers, see \url{http://www.galaxyzoo.org}.} and {\it Facebook}, as two prominent example of social machines our classification framework should apply to. The user describes the opposing poles of the construct - in this case, the user may decide on 'For Science' and 'For Socialising' in order to capture the core distinction between the two system. The user then rates every element with value from $1$ to $5$ on this construct, where $1$ represents an element that is purely
+differentiates between {\it GalaxyZoo}\footnote{In GalaxyZoo people classify galaxies with collective performance as good as professional astronomers, see \url{http://www.galaxyzoo.org}.} and {\it Facebook}, as two prominent example of social machines our classification framework should apply to. The user describes the opposing poles of the construct - in this case, the user may decide on 'For Science' and 'For socialising' in order to capture the core distinction between the two system. The user then rates every element with value from $1$ to $5$ on this construct, where $1$ represents an element that is purely
 'For Science', and $5$ one that mainly serves  'socializing' purposes. Elements can also be rated with values between the poles if they may correspond to both or neither. The repertory grid software then identifies elements that are the least differentiated when requesting new constructs, in an attempt to elicit as much knowledge as possible from the user. We applied this technique to create an initial set of examples of social machines and to classify them according to specific features. To do so, we asked then computer science researchers familiar with the field to create their own repertory grids, and populate the elements from their own knowledge, and created the constructs using the standard repertory grid elicitation technique described above. This exercise led to $10$ grids, the union of which comprised a total of $56$ unique elements (social machines)
 and $117$ different constructs (classifying factors). As the aim of this initial phase was to understand how people perceive the notion of social machine and their most distinctive properties, we allowed the participants to choose the social machines they are familiar with and describe them in their own terms.
 
@@ -208,8 +202,8 @@ Looking at the set of social machines in a polyarchy leads to a broad/specific r
 
 \begin{figure}[htb]
 \begin{center}
-\includegraphics[width=8.5cm]{img/polyarchy.pdf}
-\caption{A polyarchy of social machines, illustrating the infrastructure and frameworks used by social machines, and machine-machine usage.} \label{polyarchy}
+\includegraphics[width=0.4\textwidth]{img/polyarchy.pdf}
+\caption{A polyarchy of social machines, illustrating the infrastructure and frameworks used by social machines, and machine-machine usage} \label{polyarchy}
 \end{center}
 \end{figure}
 
@@ -218,7 +212,7 @@ and seeing what similarities flow up and down the polyarchy. For example, what d
 specific instances of Ushahidi/Zooniverse/MediaWiki have in common with other instances, and
 how to they differ dynamically? How do certain design decisions taken at the level of the infrastructure, frameworks and service propagate into narrower-focused systems that are built on top of them? Similarly, how will such decisions affect a broader ecosystem of social machines, each with their own, though overlapping, purposes and communities? 
 
-The polyarchy is complementary to the classification constructs we elicitated. The constructs apply to all levels of the polyarchy, though some of them might be more easier to understand and describe in the context of some levels. For example, instances of social machines residing at the bottom of the polyarchy are likely to be built with a very concrete audience in mind, and as such the mechanisms to incentivize participation are likely to be clearer and more straightforward to study and adjust than in cases in which such boundaries cannot be defined, such as Facebook, or even Wikipedia. In the same time, these systems will have to decide among an array of diverse basic services and frameworks for their implementations; the impact of such engineering decisions is difficult to predict in great detail as a thorough understanding of what makes certain social machines more successful than others, in terms of technology choices and beyond, is largely missing for most application domains.  
+The polyarchy is complementary to the classification constructs we elicited. The constructs apply to all levels of the polyarchy, though some of them might be more easier to understand and describe in the context of some levels. For example, instances of social machines residing at the bottom of the polyarchy are likely to be built with a very concrete audience in mind, and as such the mechanisms to incentivize participation are likely to be clearer and more straightforward to study and adjust than in cases in which such boundaries cannot be defined, such as Facebook, or even Wikipedia. In the same time, these systems will have to decide among an array of diverse basic services and frameworks for their implementations; the impact of such engineering decisions is difficult to predict in great detail as a thorough understanding of what makes certain social machines more successful than others, in terms of technology choices and beyond, is largely missing for most application domains.  
 
 %One such example is the 'open access' movement in scholarly publishing
 %~\cite{harnad2001self}. This cause mobilizes academic authors to self-archive their own papers online so they are available for free, in addition to hosted versions behind publishers pay-walls. In order to achieve this aim, the social machine of 'open access' typically uses the social machines of institutional repositories provided
@@ -304,8 +298,10 @@ The polyarchy is complementary to the classification constructs we elicitated. T
 \subsection{Constructs}
 The clustering process described in Section~\ref{meth} yielded both a
 reduction in the overall number of constructs (in particular an
-elimination of over-represented areas) and the identification of four
-simple themes: sets of constructs pertaining to users and roles within
+elimination of over-represented areas) and the identification of three
+simple themes: a 
+
+sets of constructs pertaining to users and roles within
 each machine, second, the nature of tasks, problems and activities
 performed through and using the machine, third, motivation for
 participation, finally, the contexts of participation.  
@@ -316,17 +312,16 @@ following subsections.
 
 \begin{table}[htb]
 \begin{center}
+\begin{scriptsize}
 \begin{tabular}{|p{8cm}|}
 \hline
-
-
 {\bf Tasks, purpose and context of participation} \\
 \hline
 Activities involve creative production of content \\
 Activities involve subjective appraisal of content \\
 Activities involve solving (a definable) computation task or set of problems\\
 Tasks are domain-specific \\
-The machine owner (service/platform) derives benefit from participation \\
+The machine owner derives benefit from participation \\
 Activities and tasks are pre-defined or participant-defined \\
 Variation in types of contributions and tasks \\
 Participants' participate to fulfill needs of a role  \\
@@ -336,19 +331,21 @@ Participants' participate to fulfill needs of a role  \\
 \hspace{1cm} leisure/entertainment role \\
 Participation is done via: \\
 \hspace{1cm} mobile devices \\
-\hspace{1cm} web browsers \\
+\hspace{1cm} Web browsers \\
 \hspace{1cm} apps \\
 \hspace{1cm} sensors/sensing (location sensing and wearable devices) \\
 Participation is done in a mobile context \\
 \hspace{1cm} Physical location is relevant to the service \\
 \hline
-{\bf Participants, roles and incentives} \\
+{\bf Participants and roles} \\
 \hline
 Generality of audience \\
 Participant autonomy \\
 Participant anonymity \\
 Extent of hierarchical organization of roles \\
-Clear separation of roles/responsibilities among participants \\
+Clear separation of roles among participants \\
+{\bf Motivation and incentives} \\
+\hline
 Participants are intrinsically motivated:\\
 \hspace{1cm} to gain/share knowledge \\
 \hspace{1cm} to ``get something done'' \\
@@ -356,62 +353,40 @@ Participants are intrinsically motivated:\\
 \hspace{1cm} to ``be social'' \\
 \hspace{1cm} for the benefit of a specific group of people who need help \\
 \hspace{1cm} for the benefit of society as a whole \\
-Participation is motivated by extrinsic reward (payment, status etc) \\
+Participation is motivated by extrinsic reward (payment, status) \\
 \hline
 
-
 \end{tabular}
+\end{scriptsize}
 \end{center}
-\caption{Consolidated constructs of social machines.} \label{table:constructs}
+\caption{Consolidated constructs of social machines} \label{table:constructs}
 \end{table}
 
-
-\subsubsection{System view: tasks, purpose and context of participation}
+\subsubsection{Tasks, purpose, and context of participation}
 The first set of constructs pertain to \emph{what} the participants
 do, both individually within the system, and collectively as a whole.
 Individual activities might include creation of content, subjective
 appraisal of existing content, posing of problems, solving of
-problems, andf so on.  The resulting computation, looked at from a
+problems, and so on.  The resulting 'computation', looked at from a
 macroscopic whole, might be the identification of high-quality
 artistic content, insight, or creative works, collective problem
 solving, and so on.  Such tasks might be pre-defined by the system
-designers, or brought to the system by participants.  Futher, these
+designers, or brought to the system by participants.  Further, these
 tasks might be of a specific type or class, or of many varied types or
-encompass a general class of activities.  To capture these
-difeferences, we include a construct that differentiates machines with
-pre-defined problem spaces or are open to participant-provided tasks
-and activities.  Finally, we ask whether the benefit derived by
+encompass a general class of activities.  To capture this diversity, 
+we include a construct that differentiates machines with pre-defined problem spaces or are open to participant-provided tasks and activities.  Finally, we ask whether the benefit derived by
 participants is distinct from that gained by machine/platform owners
-and service providers.
+and service providers. 
 
-The final set of constructs pertains to the context(s) of each
-participant's greater (life-) activities that participation is
-performed.  This context could be in a work context, home/family
-context, for leisure, and at a desk or away from a computer (in a
-mobile context).  PArticipation could be conducted via apps, web
-browsers, sensors and other technolgoies.  Due to the predominance of
-``geo-locative'' services that incorporate information about the
-user's location, we have included a construct identifying the degree
-to which the user's location is used by the machine.
+The second set of constructs pertains to the context(s) of each participant's greater (life-) activities in which the interaction with the system occurs.  This context could be in a work context, home/family context, for leisure, and at a desk or away from a computer (in a mobile context).  Participation could be conducted via apps, Web browsers, sensors and other technologies.  Due to the predominance of geolocation services, one of the constructs collected through knowledge elicitation identifies the degree to which the user's location is used by the machine.
 
-\subsubsection{Social view: users, roles, motivation and incentives}
+\subsubsection{Participants and roles}
+This set of constructs pertain to the human participants of social machines and the way(s) participants are organized within them. One construct identifies whether participants constitute members of the general public, or are of a specific demographic, external group or organization, occupation, or of a particular expertise.  Two constructs, \emph{autonomy} and \emph{anonymity} pertain to the degree to which interaction is constrained among participants, and to the degree to which participants' identities are used and disclosed within the machine. Additional two constructs pertain to the roles: first, as to whether multiple roles are pre-differentiated by the machine or
+whether all participants essentially initially assume the same role, second whether roles (pre-defined or emergent) are hierarchical.
 
-The first set of constructs pertain to the human participants of
-social machines and the way(s) participants are organised within them.
-One construct identifies whether participants constitute members of
-the general public, or are of a specific demongraphic, external group
-or organisation, occupation, or of a particular expertise.  Two
-constructs, \emph{autonomy} and \emph{anonymity} pertain to the degree
-to which interaction is constrained among participants, and to the
-degree to which participants' identities are used and disclosed within
-the machine. The final two constructs pertain to the roles: first,
-as to whether multiple roles are pre-differentiated by the machine or
-whether all participants essentially initially assume the same role,
-second whether roles (pre-defined or emergent) are archical.
-
-
-The third set of themes pertains to the motivation that sustains
-continued participation in these systems.  We identiy 6 different
+\subsubsection{Motivation and incentives}
+Related to the social structure  motivation that sustains
+continued participation in these systems.  We identify six different
 kinds of common sources of intrinsic motivation; first, that
 participation is fun, second that it accomplishes an activity that the
 participant enjoys or wanted to get done, third, that it satisfies the
@@ -421,9 +396,9 @@ benefit a particular group of disadvantaged people or individuals who
 need assistance, or, finally, if participation is beneficial to
 society as a whole.  Finally, we ask whether extrinsic motivational
 factors also contributed to sustained participation - such factors
-could include money reward, status, recognition and so on
-
-
+could include money reward, status, recognition and so on \cite{kuznetsov2006motivations,lakhani2003hackers,tagging}.
+%Peer-to-peer filesharing~\cite{p2p}; Tagging~\cite{tagging}; and Virtual
+%Communities~\cite{ardichvili2003motivation,Moore:2007:UMM:1235000.1235035}.
 
 %% {\bf The types of tasks undertaken by the social component and the resulting contributions:}Social machines, just as any computing system, are built with a given purpose in mind, and exhibit functionality by which this purpose can be achieved. Users and the emerging social network interact with the system and with each other to carry out specific tasks by which they contribute to the 'computation'. This includes the creation and refinement of digital artifacts by executing given actions, possibly in collaboration with other participants. For example, in GalaxyZoo\footnote{\url{http://www.galaxyzoo.org}} people classify galaxies with collective performance as good as professional astronomers, while in reCaptcha\footnote{\url{http://www.google.com/recaptcha}} they refine the data that describes digital manuscripts. Sometimes, systems look for innovative ways of getting people to engage with the systems, including game narratives, like in EteRNA\footnote{\url{http://eterna.cmu.edu}}, in which  participants design RNA  that is evaluated automatically using simulators and then refined via human effort, or monetary rewards, like in Amazon's Mechanical Turk, a platform in which users undertake routine (micro) tasks such as object classification, audio transcription and text translation.
 
@@ -477,54 +452,36 @@ could include money reward, status, recognition and so on
 
 \subsection{Using the classification framework}
 \label{sec:usage}
-In order to demonstrate usage of our framework's constructs, we ranked our social machines
-by their Alexa ranking, and performed a full repertory grid elicitation exercise over them.
-This process involved ranking each social machine against the constructs, rating each construct
-from 1 to 5. In total, $680$ ranking were made, and the
+In order to demonstrate usage of the constructs we ordered our social machines
+by their Alexa ranking, and performed a full repertory grid elicitation exercise over the first $20$ of the $56$ collected in the first phase of the methodology (see Section \ref{sec:methodology}). This process assessing each social machine against the constructs by choosing a rate between $1$ and $5$. This led to a total of $680$ ratings, and the
 results are illustrated in a grid and accompanying dendrograms for element and construct
 similarity in Figure~\ref{dendrogram}.
 
 \begin{figure}[htb]
 \begin{center}
-\includegraphics[width=4cm]{img/dendrogram-elements.png}
-\caption{Dendrogram of elements (social machines) from a repertory grid exercise of the top 20 (ranked by Alexa) social machines from our element set, against our consolidated constructs.} \label{dendrogram}
+\includegraphics[width=0.2\textwidth]{img/dendrogram-elements.png}
+\caption{Dendrogram of elements (social machines) from a repertory grid exercise of the top $20$ (ranked by Alexa) social machines from our element set, against our consolidated constructs} \label{dendrogram}
 \end{center}
 \end{figure}
 
 \begin{figure}[htb]
 \begin{center}
-\includegraphics[width=8cm]{img/dendrogram-constructs.png}
-\caption{Dendrogram of constructs from a repertory grid exercise of the top 20 (ranked by Alexa) social machines from our element set, against our consolidated constructs.} \label{dendrogram}
+\includegraphics[width=0.4\textwidth]{img/dendrogram-constructs.png}
+\caption{Dendrogram of constructs from a repertory grid exercise of the top $20$ (ranked by Alexa) social machines from our element set, against our consolidated constructs} \label{dendrogram}
 \end{center}
 \end{figure}
 
 From the dendrograms we can get a sense of similarities and separation of social machines. For
-instance, it is clear that YouTube, Vimeo, Reddit and Digg are similar, which is logical, because
-they are all social machines that focus on sharing content. Likewise, Quora and StackOverflow
-are also similar, and again, this makes sense, because they are both question answering social
-machines. There is also a dendrogram for the constructs, to show correlations between them. This
-dendrogram indicates that there is a correlation between the ``Single Participant Roles'' and
-``No Hierarchy in Participant Roles'' constructs, which is because they refer to the same
-aspect of social machines. Another, but less obvious similarity is between the ``Large variety of
-social features'' and ``Benefit NOT for the world/society'', which indicates that of the social
-machines we have rated, there is a correlation between social features and social machines that
-do not benefit the world at large, and vice-versa.
+instance, it is clear that YouTube, Vimeo, Reddit, and Digg are similar, which is not unexpected, due to their focus on sharing content. Likewise, the exercise confirms commonalities between Quora and StackOverflow, which can be easily understood, given their question answering purpose. There is also a dendrogram for the constructs, which can be used, as more data is collected, as an indicator for correlation between constructs. In this particular case, dendrogram suggests that there is a correlation between the 'Single Participant Roles' and 'No Hierarchy in Participant Roles' constructs, which is because they refer to the same aspect of social machines. Another, but less obvious connection is between the 'Large variety of social features' and 'Benefit NOT for the world/society', which requires further investigation.
 
-We envisage two key initial uses for this framework: for classifying social machines; and for
-predicting behaviour of new/future social machines. For classifying social machines, it will
-enable direct comparisons to be made with existing machines, as well as provide a platform
-for discussions about social machines. We also think that the data from a large-scale classification
-exercise may be useful for researchers who wish to apply prediction techniques (such as SVMs)
-to social machines, their behaviour and impact.
-
+We envisage three key use cases for our framework. First and foremost the framework forms the basis for a coherent and comprehensive description and classification of social machines. The knowledge elicitation technique referred to in this paper is just one of the many tools which can assist this exercise. In addition, it enables direct comparisons between systems, and provides a platform for terminologically consistent discussions about the field as a whole and specific instantiations. Finally, we also think that with more and more classification data becoming available, for instance, also through functionality that automatically monitors and computes the values of the some of the constructs introduced earlier, researchers will wish to apply prediction techniques (such as SVMs) to social machines, their behavior, and impact.
 
 \section{Future work: building a social machine around the classification framework}
-
+In this paper we presented a first outline of a possible organization structure for the design space of social machines. We introduced the key features of the notion of social machines, and explained how this notion differs from related areas such as collective intelligence, crowdsourcing and human computing. We then discussed the basic constructs of a classification framework created through the repertory grid elicitation technique. In its current version the framework consists of $31$ constructs clustered according to the main components of social machines: social and machine-driven services, and the interactions between them. Our future work will mostly be dedicated to the revision of this initial list of constructs. Most notably, we would like to add a number of constructs to emphasize the importance of the interaction aspect in the theory, engineering, and operation of social machines. This includes constructs related to the human-computer workflows supported (e.g., human intelligence replacing automatic algorithms as in GWAPs vs the different bots available on Wikipedia complementing collaborative manual editing), the way inputs from the crowd are validated, aggregated and turned into a useful outcome, as well as issues related collaboration and coordination, and interface and communication design. In addition, we plan to engage with the broader researcher community by setting up a social machine to facilitate discussions and feedback collection. One specific idea that is currently under development is to build a microtask-like environment, including specific game elements, in which participants are asked to provide answers to atomic challenges that rate and compare a pair of social machine instances according to a construct of our framework. 
 
 
 
 \section{Acknowledgments}
-
 This work is supported under SOCIAM: The Theory and Practice of Social Machines.  The SOCIAM Project is funded by the UK Engineering and Physical Sciences Research Council (EPSRC) under grant number EP/J017728/1 and comprises the Universities of Southampton, Oxford and Edinburgh.
 
 %
