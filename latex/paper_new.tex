@@ -167,7 +167,7 @@ The Web as a global platform for information access and sharing marked a second 
 
 \begin{figure}[htb]
 \begin{center}
-\includegraphics[width=8cm]{img/socialmachinescope.png}
+\includegraphics[width=0.3\textwidth]{img/socialmachinescope.png}
 \caption{Social machines and related areas} \label{fig:social machine}
 \end{center}
 \end{figure}
@@ -190,61 +190,49 @@ technique~\cite{kelly} in order to derive an initial set of {\it elements}, whic
 
 In repertory grid elicitation a software tool is used to ask users to describe constructs
 that differentiate between elements - for example,  prompting the user to create a construct that
-differentiates between {\it GalaxyZoo} and {\it Facebook}, as two prominent example of social machines our classification framework should apply to. The user describes the opposing poles of the construct - in this case, the user may decide on 'For Science' and 'For Socialising' in order to capture the core distinction between the two system. The user then rates every element with value from $1$ to $5$ on this construct, where $1$ represents an element that is purely
+differentiates between {\it GalaxyZoo}\footnote{In GalaxyZoo people classify galaxies with collective performance as good as professional astronomers, see \url{http://www.galaxyzoo.org}.} and {\it Facebook}, as two prominent example of social machines our classification framework should apply to. The user describes the opposing poles of the construct - in this case, the user may decide on 'For Science' and 'For Socialising' in order to capture the core distinction between the two system. The user then rates every element with value from $1$ to $5$ on this construct, where $1$ represents an element that is purely
 'For Science', and $5$ one that mainly serves  'socializing' purposes. Elements can also be rated with values between the poles if they may correspond to both or neither. The repertory grid software then identifies elements that are the least differentiated when requesting new constructs, in an attempt to elicit as much knowledge as possible from the user. We applied this technique to create an initial set of examples of social machines and to classify them according to specific features. To do so, we asked then computer science researchers familiar with the field to create their own repertory grids, and populate the elements from their own knowledge, and created the constructs using the standard repertory grid elicitation technique described above. This exercise led to $10$ grids, the union of which comprised a total of $56$ unique elements (social machines)
 and $117$ different constructs (classifying factors). As the aim of this initial phase was to understand how people perceive the notion of social machine and their most distinctive properties, we allowed the participants to choose the social machines they are familiar with and describe them in their own terms.
 
 %To enrich the resulting list of classifying constructs we then extracted the most frequent tags used in connection to the $56$ systems mentioned by the participants from the online bookmarking service {\it delicious.com}, thus achieving a crowdsourced social-machine classification containing the following clusters: Social Networks, (Micro)Blogging, News Aggregators, Image Boards, Crowd Science, Answer Gardens, Community Watch, Health and Wellbeing Support, Action and Investigation, Opinion Sharing, Video Sharing, Photo Sharing, Code Sharing, Art Sharing, Crowdsourcing Platforms, Mash-up Systems, and Crowdsourcing Toolkits and Platforms.
 
 While determining the intersection of elements was straightforward, the consolidation of the
-constructs required a more thorough process. We manually grouped the constructs into rough clusters, based around the areas they cover. We examined each construct to determine which were equivalent, and whether we could re-word or subsume existing constructs to cover the same aspects. The aim of this exercise was twofold: to remove any redundancy and cut the classification space down to a manageable size, while ensuring that all constructs that were elicited were represented in the final set. This process involved four of the authors discussing the choices, and resulted in a consolidated set of $31$ constructs organized in four different clusters:
+constructs required a more thorough process. We manually grouped the constructs into rough clusters, based around the areas they cover. We examined each construct to determine which were equivalent, and whether we could re-word or subsume existing constructs to cover the same aspects. The aim of this exercise was twofold: to remove any redundancy and cut the classification space down to a manageable size, while ensuring that all constructs that were elicited were represented in the final set. This process involved four of the authors discussing the choices, and resulted in a consolidated set of $31$ constructs organized in four different clusters: popularity, tasks and purpose, participants and roles, and motivation and incentives. In our analysis we will not further consider the first cluster, which primarily covered descriptive information about a given system, such as its perceived level of maturity and current number of users. Further on, the constructs were not evenly distributed across clusters; whereas some aspects such as roles of participants occurred frequently (in various flavors) in the grids provided by the ten experts, others such as the different types of workflows synthesizing human and automatized capabilities of a social machine were less taken into account. As discussed in Section \ref{sec:comparison} we believe that the interaction between these two types of services is an essential part of the theory and practice of social machines, being one of the elements that distinguishes them from related areas which are biased towards one or the other. Extending the framework with constructs capturing these aspects (see, for instance, \cite{quinn2011human} for examples in the context of human computation) is part of our future work.
 
-\begin{description}
-  \item [Popularity]: this cluster mainly covered descriptive information about a given system, such as its maturity and number of users. For the purpose of our analysis we decided to discard the associated constructs, as they
-  \item [Tasks and purpose]
-  \item [Motivation and incentives]
-  \item [Technology]
-\end{description}
+The paper presents the current version of the framework. We envision a reiteration of the main clusters and constructs based on discussions with and feedback from various scientific audiences. We provide initial evidence of the usability of the framework as a tool to  examine commonalities and differences between social machines in Section \ref{sec:usage}, in which we applied the repertory grid elicitation technique to a set of $20$ social machines instances ranked by popularity according to the Alexa service.\footnote{\url{www.alexa.com/}} A more thorough evaluation will determine the extent to which the classification constructs identified can be meaningfully used by researchers and system designers and operators. We will test the completeness, correctness, and comprehensibility of the constructs in experiments in which a new set of social machines will be classified by framework users; we will ask the participants to assess the quality of the framework along these general dimensions, and measure inter-annotator agreement to learn about the usefulness of the classifications produced. 
 
-The paper presents the current version of the framework. We envision a reiteration of the main clusters and constructs based on discussions with and feedback from various scientific audiences. We provide initial evidence of the usefulness of the framework as a tool to  examine commonalities and differences between social machines in Section \ref{sec:usage}, in which we applied the repertory grid elicitation technique to a set of $20$ social machines instances ranked by popularity according to the Alexa service.\footnote{\url{www.alexa.com/}} A more thorough evaluation will assess the extent to which the classification constructs identified can be meaningfully used to 
+\subsection{The polyarchical relationship of social machines}
+When defining the boundaries of what we call social machines, one important observation was related to the distinction between platforms and technologies such as wikis and GWAP ('games-with-a-purpose'), which enable social machines to be created, and their instantiations into social machines that were brought to life for a specific purpose, such as Wikipedia and EteRNA\footnote{\url{http://eterna.cmu.edu}}, a game in which  participants design RNA  that is evaluated automatically using simulators. A second observation is concerned with the relationship between broader and narrower-scoped instances of social machines; general-purpose examples such as Facebook, Twitter or Amazon, or even the Web, enable the formation of more specific social machines and communities within them, that are working to solve solve different problems. An example illustrating this relationship is the Obama'12 US Presidential campaign~\cite{obamakieron}, which relied on Twitter and Facebook as basic social machines; most forms of customer relationship management and community engagement carried out in the digital space use similar tools. Finally, social machines are interconnected into a greater ecosystem, both at the social and at the computation levels. For example, insights on the classification of space objects gained through GalaxyZoo may influence the content of the corresponding articles, and the associated editorial processes, within Wikipedia. In the same time,a large number of communities within Wikipedia focus specific topics and activities, such as those contributing to science and technology.\footnote{Visualization of Wikipedia Science Communities: \url{http://www.olihb.com/WikiCommunities/}}
 
-\subsection{The Polyarchical Relationship of Social Machines}
-
-While determining a set of social machines, one clear distinction was between social machine frameworks, such as MediaWiki and Ushahidi, which enable
-social machines to be created, and instantiations of those frameworks into social machines that have been created for a specific purpose, such as Wikipedia
-and Ushahidi Haiti. However, through further investigation, we discovered that the distinction between framework and instantiations was not the only
-differentiator. Specifically, that some social machines could also have sub-machines or communities within them, that are working to solve different problems,
-within the context of the larger machine. For example, Wikipedia is an instantiation of the MediaWiki framework, but there are a large number of
-communities within Wikipedia that work on domain-specific areas, such as those contributing in areas of science and technology\footnote{Visualisation of Wikipedia Science Communities: \url{http://www.olihb.com/WikiCommunities/}}. However, we must also note that wikipedia is primarily split into communities of language, with the English, German and French wikipedias having the largest number of articles. It is therefore possible to analyse wikipedia into a hierarchy, from MediaWiki, to the languages of Wikipedia, down to the domain-specific communities. We explored this idea further, to include other social machines, and links where social machines utilise other social machines in order to function. For example, the social machine used by the Obama '12 US Presidential campaign~\cite{obamakieron}, which relied on social machines such as Twitter and Facebook.
-
-Looking at the set of social machines in a polyarchy leads to a broad/specific relationship emerging that lets us talk about behaviours at various levels of granularity.  We propose looking at nested machines with ``The Web'' as one of several potential roots, with the next level down consisting of sub-platforms (such as Facebook, Twitter, MediaWiki, Ushahidi platforms) that spawn more specific social machines. A resulting polyarchy is shown in Figure~\ref{polyarchy}, which classifies levels as Infrastructure, Frameworks, Services and Causes/Groups.
+Looking at the set of social machines in a polyarchy leads to a broad/specific relationship emerging that lets us talk about behavior at various levels of granularity.  We propose looking at nested machines with 'The Web' as one of several potential roots, with the next level down consisting of sub-platforms (such as Facebook, Twitter, MediaWiki, Ushahidi) that spawn more specific social machines. A resulting polyarchy is shown in Figure~\ref{polyarchy}, which classifies levels as infrastructure, frameworks, services, and projects and initiatives.
 
 \begin{figure}[htb]
 \begin{center}
 \includegraphics[width=8.5cm]{img/polyarchy.pdf}
-\caption{A polyarchy of Social Machines, illustrating the infrastructure and frameworks used by social machines, and machine-machine usage.} \label{polyarchy}
+\caption{A polyarchy of social machines, illustrating the infrastructure and frameworks used by social machines, and machine-machine usage.} \label{polyarchy}
 \end{center}
 \end{figure}
 
 This approach enables us to start with a more detailed analysis of certain levels over others;
 and seeing what similarities flow up and down the polyarchy. For example, what do
 specific instances of Ushahidi/Zooniverse/MediaWiki have in common with other instances, and
-how to they differ dynamically?
+how to they differ dynamically? How do certain design decisions taken at the level of the infrastructure, frameworks and service propagate into narrower-focused systems that are built on top of them? Similarly, how will such decisions affect a broader ecosystem of social machines, each with their own, though overlapping, purposes and communities? 
 
-One originally unforeseen classification is that of the causes that utilise Social Machines.
-Through a particularly popular cause, large numbers of participants can be mobilised, for
-either a short period of time, or for long-term engagement, using multiple social machines
-in order to further their cause. Examples of causes can be seen in Figure~\ref{polyarchy},
-at the lowest level of the polyarchy. One such example is the cause of ``Open Access'' to
-academic publications~\cite{harnad2001self}. This cause mobilises academic authors to
-self-archive their own papers online so they are available for free, in addition to hosted
-versions behind publishers pay-walls. In order to achieve this aim, the social machine of
-``open access'' typically uses the social machines of institutional repositories provided
-by the authors' associated institutions. As with other social machines, these social
-machines typically use off-the-shelf implementations (in this case the most popular are
-EPrints~\cite{eprints} and DSpace~\cite{dspace}), which run as web sites on the world wide
-web. This cause is mature, growing year-on-year and has global coverage.
+The polyarchy is complementary to the classification constructs we elicitated. The constructs apply to all levels of the polyarchy, though some of them might be more easier to understand and describe in the context of some levels. For example, instances of social machines residing at the bottom of the polyarchy are likely to be built with a very concrete audience in mind, and as such the mechanisms to incentivize participation are likely to be clearer and more straightforward to study and adjust than in cases in which such boundaries cannot be defined, such as Facebook, or even Wikipedia. In the same time, these systems will have to decide among an array of diverse basic services and frameworks for their implementations; the impact of such engineering decisions is difficult to predict in great detail as a thorough understanding of what makes certain social machines more successful than others, in terms of technology choices and beyond, is largely missing for most application domains.  
 
+%One such example is the 'open access' movement in scholarly publishing
+%~\cite{harnad2001self}. This cause mobilizes academic authors to self-archive their own papers online so they are available for free, in addition to hosted versions behind publishers pay-walls. In order to achieve this aim, the social machine of 'open access' typically uses the social machines of institutional repositories provided
+%by the authors' associated institutions. As with other social machines, these social
+%machines typically use off-the-shelf implementations (in this case the most popular are
+%EPrints~\cite{eprints} and DSpace~\cite{dspace}), which run as web sites on the world wide
+%web. This cause is mature, growing year-on-year and has global coverage.
+
+
+%One originally unforeseen classification is that of the causes that utilise Social Machines.
+%Through a particularly popular cause, large numbers of participants can be mobilised, for
+%either a short period of time, or for long-term engagement, using multiple social machines
+%in order to further their cause. Examples of causes can be seen in Figure~\ref{polyarchy},
+%at the lowest level of the polyarchy. 
 %\subsubsection{Multi-faceted motivation, and who-gets-what benefit}
 %
 %%We identified a hierarchy of constructs pertaining to the motivation people have for using social
@@ -314,15 +302,15 @@ web. This cause is mature, growing year-on-year and has global coverage.
 
 
 \subsection{Constructs}
-
 The clustering process described in Section~\ref{meth} yielded both a
 reduction in the overall number of constructs (in particular an
-elimination of overrepresented areas) but also identificaiton of four
+elimination of over-represented areas) and the identification of four
 simple themes: sets of constructs pertaining to users and roles within
 each machine, second, the nature of tasks, problems and activities
 performed through and using the machine, third, motivation for
-participation, finally, the contexts of participation.  Each of these
-clusters contain 5-8 constructs as illustrated in Table
+participation, finally, the contexts of participation.  
+
+Each of these clusters contain between five and eight constructs as illustrated in Table
 \ref{table:constructs}; we describe each of these themes in the
 following subsections.
 
@@ -330,15 +318,9 @@ following subsections.
 \begin{center}
 \begin{tabular}{|p{8cm}|}
 \hline
-{\bf Users and Roles} \\
-\hline
-Generality of Audience \\
-Participant autonomy \\
-Participant anonymity \\
-Extent of hierarchical organisation of roles \\
-Clear separation of roles/responsibilities among participants \\
-\hline
-{\bf Tasks} \\
+
+
+{\bf Tasks, purpose and context of participation} \\
 \hline
 Activities involve creative production of content \\
 Activities involve subjective appraisal of content \\
@@ -347,20 +329,6 @@ Tasks are domain-specific \\
 The machine owner (service/platform) derives benefit from participation \\
 Activities and tasks are pre-defined or participant-defined \\
 Variation in types of contributions and tasks \\
-\hline
-{\bf Motivation} \\
-\hline
-Participants are intrinsically motivated:\\
-\hspace{1cm} to gain/share knowledge \\
-\hspace{1cm} to ``get something done'' \\
-\hspace{1cm} to ``for fun/entertainment''\\
-\hspace{1cm} to ``be social'' \\
-\hspace{1cm} for the benefit of a specific group of people who need help \\
-\hspace{1cm} for the benefit of society as a whole \\
-Participation is motivated by extrinsic reward (payment, status etc) \\
-\hline
-{\bf Context(s) of Participation} \\
-\hline
 Participants' participate to fulfill needs of a role  \\
 \hspace{1cm} work-related/professional role \\
 \hspace{1cm} home/family related \\
@@ -374,26 +342,31 @@ Participation is done via: \\
 Participation is done in a mobile context \\
 \hspace{1cm} Physical location is relevant to the service \\
 \hline
+{\bf Participants, roles and incentives} \\
+\hline
+Generality of audience \\
+Participant autonomy \\
+Participant anonymity \\
+Extent of hierarchical organization of roles \\
+Clear separation of roles/responsibilities among participants \\
+Participants are intrinsically motivated:\\
+\hspace{1cm} to gain/share knowledge \\
+\hspace{1cm} to ``get something done'' \\
+\hspace{1cm} to ``for fun/entertainment''\\
+\hspace{1cm} to ``be social'' \\
+\hspace{1cm} for the benefit of a specific group of people who need help \\
+\hspace{1cm} for the benefit of society as a whole \\
+Participation is motivated by extrinsic reward (payment, status etc) \\
+\hline
+
+
 \end{tabular}
 \end{center}
 \caption{Consolidated constructs of social machines.} \label{table:constructs}
 \end{table}
 
-\subsubsection{Users and Roles}
-The first set of constructs pertain to the human participants of
-social machines and the way(s) participants are organised within them.
-One construct identifies whether participants constitute members of
-the general public, or are of a specific demongraphic, external group
-or organisation, occupation, or of a particular expertise.  Two
-constructs, \emph{autonomy} and \emph{anonymity} pertain to the degree
-to which interaction is constrained among participants, and to the
-degree to which participants' identities are used and disclosed within
-the machine. The final two constructs pertain to the roles: first,
-as to whether multiple roles are pre-differentiated by the machine or
-whether all participants essentially initially assume the same role,
-second whether roles (pre-defined or emergent) are archical.
 
-\subsubsection{Tasks, Problems and Activities}
+\subsubsection{System view: tasks, purpose and context of participation}
 The first set of constructs pertain to \emph{what} the participants
 do, both individually within the system, and collectively as a whole.
 Individual activities might include creation of content, subjective
@@ -411,7 +384,32 @@ and activities.  Finally, we ask whether the benefit derived by
 participants is distinct from that gained by machine/platform owners
 and service providers.
 
-\subsubsection{Motivation}
+The final set of constructs pertains to the context(s) of each
+participant's greater (life-) activities that participation is
+performed.  This context could be in a work context, home/family
+context, for leisure, and at a desk or away from a computer (in a
+mobile context).  PArticipation could be conducted via apps, web
+browsers, sensors and other technolgoies.  Due to the predominance of
+``geo-locative'' services that incorporate information about the
+user's location, we have included a construct identifying the degree
+to which the user's location is used by the machine.
+
+\subsubsection{Social view: users, roles, motivation and incentives}
+
+The first set of constructs pertain to the human participants of
+social machines and the way(s) participants are organised within them.
+One construct identifies whether participants constitute members of
+the general public, or are of a specific demongraphic, external group
+or organisation, occupation, or of a particular expertise.  Two
+constructs, \emph{autonomy} and \emph{anonymity} pertain to the degree
+to which interaction is constrained among participants, and to the
+degree to which participants' identities are used and disclosed within
+the machine. The final two constructs pertain to the roles: first,
+as to whether multiple roles are pre-differentiated by the machine or
+whether all participants essentially initially assume the same role,
+second whether roles (pre-defined or emergent) are archical.
+
+
 The third set of themes pertains to the motivation that sustains
 continued participation in these systems.  We identiy 6 different
 kinds of common sources of intrinsic motivation; first, that
@@ -425,16 +423,7 @@ society as a whole.  Finally, we ask whether extrinsic motivational
 factors also contributed to sustained participation - such factors
 could include money reward, status, recognition and so on
 
-\subsubsection{Context of Participation}
-The final set of constructs pertains to the context(s) of each
-participant's greater (life-) activities that participation is
-performed.  This context could be in a work context, home/family
-context, for leisure, and at a desk or away from a computer (in a
-mobile context).  PArticipation could be conducted via apps, web
-browsers, sensors and other technolgoies.  Due to the predominance of
-``geo-locative'' services that incorporate information about the
-user's location, we have included a construct identifying the degree
-to which the user's location is used by the machine.
+
 
 %% {\bf The types of tasks undertaken by the social component and the resulting contributions:}Social machines, just as any computing system, are built with a given purpose in mind, and exhibit functionality by which this purpose can be achieved. Users and the emerging social network interact with the system and with each other to carry out specific tasks by which they contribute to the 'computation'. This includes the creation and refinement of digital artifacts by executing given actions, possibly in collaboration with other participants. For example, in GalaxyZoo\footnote{\url{http://www.galaxyzoo.org}} people classify galaxies with collective performance as good as professional astronomers, while in reCaptcha\footnote{\url{http://www.google.com/recaptcha}} they refine the data that describes digital manuscripts. Sometimes, systems look for innovative ways of getting people to engage with the systems, including game narratives, like in EteRNA\footnote{\url{http://eterna.cmu.edu}}, in which  participants design RNA  that is evaluated automatically using simulators and then refined via human effort, or monetary rewards, like in Amazon's Mechanical Turk, a platform in which users undertake routine (micro) tasks such as object classification, audio transcription and text translation.
 
