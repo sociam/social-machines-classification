@@ -1,0 +1,51 @@
+This is BibTeX, Version 0.99d (TeX Live 2010)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: paper_new.aux
+The style file: abbrv.bst
+Database file #1: sigproc.bib
+Warning--empty publisher in chesbrough2003
+Warning--empty journal in kelly
+Warning--empty journal in lakhani2003hackers
+Warning--empty journal in malone2009harnessing
+You've used 15 entries,
+            2118 wiz_defined-function locations,
+            583 strings with 5872 characters,
+and the built_in function-call counts, 4087 in all, are:
+= -- 401
+> -- 146
+< -- 2
++ -- 60
+- -- 44
+* -- 221
+:= -- 694
+add.period$ -- 47
+call.type$ -- 15
+change.case$ -- 64
+chr.to.int$ -- 0
+cite$ -- 19
+duplicate$ -- 191
+empty$ -- 356
+format.name$ -- 44
+if$ -- 865
+int.to.chr$ -- 0
+int.to.str$ -- 15
+missing$ -- 18
+newline$ -- 78
+num.names$ -- 30
+pop$ -- 88
+preamble$ -- 1
+purify$ -- 52
+quote$ -- 0
+skip$ -- 132
+stack$ -- 0
+substring$ -- 195
+swap$ -- 35
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 54
+warning$ -- 4
+while$ -- 41
+width$ -- 17
+write$ -- 156
+(There were 4 warnings)
