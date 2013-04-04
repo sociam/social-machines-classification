@@ -2,50 +2,61 @@ This is BibTeX, Version 0.99d (TeX Live 2010)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: paper_new.aux
 The style file: abbrv.bst
-Database file #1: sigproc.bib
-Warning--empty publisher in chesbrough2003
-Warning--empty journal in kelly
-Warning--empty journal in lakhani2003hackers
-Warning--empty journal in malone2009harnessing
-You've used 15 entries,
+I found no \bibdata command---while reading file paper_new.aux
+Warning--I didn't find a database entry for "bernerslee1999"
+Warning--I didn't find a database entry for "grudin1994computer"
+Warning--I didn't find a database entry for "surowiecki2005wisdom"
+Warning--I didn't find a database entry for "malone2009harnessing"
+Warning--I didn't find a database entry for "chesbrough2003"
+Warning--I didn't find a database entry for "howe2006crowdsourcing"
+Warning--I didn't find a database entry for "von2009human"
+Warning--I didn't find a database entry for "quinn2011human"
+Warning--I didn't find a database entry for "parameswaran2007research"
+Warning--I didn't find a database entry for "knowledgeelicitation"
+Warning--I didn't find a database entry for "kelly"
+Warning--I didn't find a database entry for "obamakieron"
+Warning--I didn't find a database entry for "kuznetsov2006motivations"
+Warning--I didn't find a database entry for "lakhani2003hackers"
+Warning--I didn't find a database entry for "tagging"
+You've used 0 entries,
             2118 wiz_defined-function locations,
-            583 strings with 5872 characters,
-and the built_in function-call counts, 4087 in all, are:
-= -- 401
-> -- 146
-< -- 2
-+ -- 60
-- -- 44
-* -- 221
-:= -- 694
-add.period$ -- 47
-call.type$ -- 15
-change.case$ -- 64
+            511 strings with 3949 characters,
+and the built_in function-call counts, 18 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 7
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 191
-empty$ -- 356
-format.name$ -- 44
-if$ -- 865
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
 int.to.chr$ -- 0
-int.to.str$ -- 15
-missing$ -- 18
-newline$ -- 78
-num.names$ -- 30
-pop$ -- 88
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 3
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
-purify$ -- 52
+purify$ -- 0
 quote$ -- 0
-skip$ -- 132
+skip$ -- 1
 stack$ -- 0
-substring$ -- 195
-swap$ -- 35
-text.length$ -- 2
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 54
-warning$ -- 4
-while$ -- 41
-width$ -- 17
-write$ -- 156
-(There were 4 warnings)
+type$ -- 0
+warning$ -- 0
+while$ -- 0
+width$ -- 0
+write$ -- 2
+(There was 1 error message)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=latex 2010.10.2)  4 APR 2013 16:56
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=latex 2010.10.2)  4 APR 2013 17:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -291,16 +291,14 @@ Overfull \hbox (2.85913pt too wide) in paragraph at lines 499--500
 
  []
 
-(./paper_new.bbl [6]) [7
-
-] (./paper_new.aux) ) 
+[6] [7] (./paper_new.aux) ) 
 Here is how much of TeX's memory you used:
- 1958 strings out of 493748
- 22423 string characters out of 3143569
+ 1955 strings out of 493748
+ 22391 string characters out of 3143569
  85964 words of memory out of 3000000
  5224 multiletter control sequences out of 15000+200000
  45405 words of font info for 59 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
  39i,10n,26p,3061b,332s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on paper_new.dvi (7 pages, 54800 bytes).
+Output written on paper_new.dvi (7 pages, 54820 bytes).
